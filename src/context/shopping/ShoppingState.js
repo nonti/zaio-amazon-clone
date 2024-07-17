@@ -47,7 +47,7 @@ export const ShoppingState = (props) => {
       getBasketTotal,
       addToBasket,
       setUser,
-        removeFromBasket,
+      removeFromBasket,
       emptyBasket,
     }}>
       {props.children}
