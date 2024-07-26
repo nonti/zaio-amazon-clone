@@ -19,14 +19,14 @@ const Header = () => {
   };
 
   return (
-          <header className='header'>
-          <Link to='/'>
-            <img className='header-logo'
-              src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'
-              alt='Amazon Logo'
-            />
-          </Link>
-          <Link to='/location'>
+    <header className='header'>
+      <Link to='/' className='no-underline'>
+        <img className='header-logo'
+            src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'
+            alt='Amazon Logo'
+          />
+      </Link>
+          <Link to='/location' className='no-underline'>
             <div className='header-options'>
               <span className='header-option'>Delivering to Pretoria</span>
               <span className='header-option-item'><LocationOn />Update Location</span>
@@ -38,7 +38,7 @@ const Header = () => {
             <SearchIcon className='search-icon' />
           </div>
           <div className='header-nav'>
-            <Link to={!user && '/signin'}>
+            <Link to={!user && '/signin'} className='no-underline'>
               <div className='header-options' onClick={handleAuthentication}>
                 <span className='header-option'>
                   Hello {!user ? 'Guest' : user.email} 
@@ -49,19 +49,19 @@ const Header = () => {
               </div>
             </Link>
 
-            <Link to='/orders'>
+            <Link to='/orders' className='no-underline'>
               <div className='header-options'>
                 <span className='header-option'>Returns</span>
                 <span className='header-option-item'>& Orders</span>	
             </div>
             </Link>
-            <Link to='/prime'>
+            <Link to='/prime' className='no-underline'>
               <div className='header-options'>
                 <span className='header-option'>Your</span>
                 <span className='header-option-item'>Basket</span>	
             </div>
               </Link>
-              <Link to='/checkout'>
+              <Link to='/checkout' className='no-underline'>
           <div className='header-option-basket'>
             <ShoppingCartOutlinedIcon className='shopping-basket-icon' />
               <span className='header-option-item header-basket-count'>{basket.length}

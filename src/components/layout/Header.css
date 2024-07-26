@@ -12,12 +12,17 @@
   z-index: 100;
 }
 
+
 .header-logo {
   width: 70px;
   height: 56px;
   object-fit: contain;
   margin: 0 20px;
   margin-top: 18px;
+}
+
+.no-underline {
+  text-decoration: none;
 }
 
 .header-search {
@@ -55,10 +60,6 @@
 
 .header-option {
   font-size: 10px;
-}
-
-.header-option  span{
-  text-decoration: none;
 }
 
 .header-option-item {
