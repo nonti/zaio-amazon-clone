@@ -1,0 +1,24 @@
+
+.order {
+  border: 1px solid lightgray;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.order h2 {
+  font-weight: 400;
+}
+
+.order p {
+  font-size: 12px;
+}
+
+.order-id {
+  margin-top: 10px;
+}
+
+.order-total {
+  margin-top: 20px;
+}

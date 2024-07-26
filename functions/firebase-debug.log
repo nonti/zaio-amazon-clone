@@ -8262,3 +8262,32 @@ SyntaxError: Unexpected token '}'
 [info] Serving at port 8137
 
 [debug] [2024-07-17T15:42:06.039Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-app-8f4de/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-app-8f4de/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [17/Jul/2024:15:42:18 +0000] "GET / HTTP/1.1" 200 647 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/Jul/2024:15:42:18 +0000] \"GET / HTTP/1.1\" 200 647 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [17/Jul/2024:15:42:18 +0000] "GET /static/css/main.f01dff85.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/Jul/2024:15:42:18 +0000] \"GET /static/css/main.f01dff85.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [17/Jul/2024:15:42:18 +0000] "GET /static/js/main.6efaeade.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/Jul/2024:15:42:18 +0000] \"GET /static/js/main.6efaeade.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [17/Jul/2024:15:42:19 +0000] "GET /manifest.json HTTP/1.1" 200 492 "http://127.0.0.1:5000/home" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/Jul/2024:15:42:19 +0000] \"GET /manifest.json HTTP/1.1\" 200 492 \"http://127.0.0.1:5000/home\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [17/Jul/2024:15:42:19 +0000] "GET /logo192.png HTTP/1.1" 200 5347 "http://127.0.0.1:5000/home" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/Jul/2024:15:42:19 +0000] \"GET /logo192.png HTTP/1.1\" 200 5347 \"http://127.0.0.1:5000/home\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [17/Jul/2024:15:42:19 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://127.0.0.1:5000/home" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/Jul/2024:15:42:19 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://127.0.0.1:5000/home\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [17/Jul/2024:16:08:48 +0000] "GET /payment HTTP/1.1" 200 647 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/Jul/2024:16:08:48 +0000] \"GET /payment HTTP/1.1\" 200 647 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [17/Jul/2024:16:08:48 +0000] "GET /static/css/main.f01dff85.css HTTP/1.1" 200 - "http://127.0.0.1:5000/payment" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/Jul/2024:16:08:48 +0000] \"GET /static/css/main.f01dff85.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/payment\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [17/Jul/2024:16:08:48 +0000] "GET /static/js/main.6efaeade.js HTTP/1.1" 200 - "http://127.0.0.1:5000/payment" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/Jul/2024:16:08:48 +0000] \"GET /static/js/main.6efaeade.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/payment\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
