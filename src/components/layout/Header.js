@@ -3,10 +3,9 @@ import { auth } from '../../firebase';
 import React,{useContext} from 'react';
 import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
-import LocationOn from '@mui/icons-material/LocationOn';
 import ShoppingContext from '../../context/shopping/shoppingContext';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-
 
 const Header = () => {
   const shoppingContext = useContext(ShoppingContext);
@@ -26,14 +25,20 @@ const Header = () => {
             alt='Amazon Logo'
           />
       </Link>
-          <Link to='/location' className='no-underline'>
-            <div className='header-options'>
-              <span className='header-option'>Delivering to Pretoria</span>
-              <span className='header-option-item'><LocationOn />Update Location</span>
-            </div>
-          </Link>
+          <div className='header-option'>
+        <div className='delivery-option'>
+          <div className='location-icon'>
+            <LocationOnOutlinedIcon/>
+          </div>
+          <div className='location-text'>
+            <span className='header-option'>Deliver to </span>
+            <span className='header-option-item'>Pretoria , SA</span>
+          </div>
+        </div>
+      </div>
       
-          <div className='header-search'>
+      <div className='header-search'>
+        <button className='header-search-all'>All</button>
             <input className='header-input' type='text' placeholder='Search' />
             <SearchIcon className='search-icon' />
           </div>
